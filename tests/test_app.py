@@ -19,6 +19,9 @@ def test_mult():
 def test_div():
     assert div(12, 3) == 4
 
+def test_div2():
+    assert div(12, 0) != 4
+
 def test_log():
     assert log(100) == 2
 
@@ -31,5 +34,14 @@ def test_sin():
 def test_cos():
     assert cos(math.pi) == -1
 
+def test_root():
+    assert sqr_root(16) == 4
+
+def test_root2():
+    assert sqr_root(-4) != 4
+
 def test_percent():
-    assert per (6, 10) == 60
+    assert per(6, 10) == 60
+
+def test_percent2():
+    assert per(-6, -10) != 60

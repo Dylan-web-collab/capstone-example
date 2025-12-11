@@ -11,12 +11,10 @@ def mult (a, b):
 
 def div (a, b):
     if b == 0:
-        return "no negative"
+        return "no zero"
     return a/b
 
 def log (a, base=10):
-    if a == 0:
-        return "no negative"
     return math.log10(a)
 
 def sqr (a):
@@ -35,7 +33,7 @@ def sqr_root (a):
         return "no negatives"
 
 def per (a, b):
-    if a >= 0 & b >= 0:
-        return (a/b) * 100
-    else:
+    if ((a / abs(a) == -1) or (b == 0)):
         return "no negatives"
+    else:
+        return (a / b) * 100
