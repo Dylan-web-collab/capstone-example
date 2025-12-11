@@ -28,9 +28,9 @@ jobs:
 
       - name: Prepare artifact folder
         run: |
-        mkdir site/
-        mv htmlcov site/
-        mv coverage.xml site/
+        mkdir sites
+        mv htmlcov sites/
+        mv coverage.xml sites/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
