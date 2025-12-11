@@ -14,10 +14,10 @@ def div (a, b):
         return "no negative"
     return a/b
 
-def log (a):
+def log (a, base=10):
     if a == 0:
         return "no negative"
-    return math.log(a)
+    return math.log10(a)
 
 def sqr (a):
     return a ** 2
